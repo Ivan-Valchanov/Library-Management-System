@@ -2,20 +2,12 @@ public class Book {
 
     String title;
     String author;
-    String publisher;
-    int year;
-    int pages;
-    int price;
-    String isbn;
+
     boolean available;
 
-    public Book(String title, String author, String publisher, int year, int pages, int price) {
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
-        this.publisher = publisher;
-        this.year = year;
-        this.pages = pages;
-        this.price = price;
     }
 
     public String getTitle() {
