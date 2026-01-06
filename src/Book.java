@@ -1,15 +1,20 @@
 public class Book {
 
-    String title;
-    String author;
-
+    public String title;
+    public String author;
     boolean available;
 
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
+        this.available = true;
     }
 
+    @Override
+    public String toString() {
+        return "Books: " + title + "Author " + author;
+
+    }
     public String getTitle() {
         return title;
     }

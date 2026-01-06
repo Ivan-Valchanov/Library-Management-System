@@ -20,4 +20,17 @@ public class Library {
         }
         System.out.println("Sorry, book is not available");
     }
+
+
+
+
+
+    public void showBooks() {
+        if(books.isEmpty()) {
+            System.out.println("No books available");
+        }
+        else {
+            books.forEach(System.out::println);
+        }
+    }
 }
